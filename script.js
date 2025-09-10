@@ -14,7 +14,7 @@ const getSum = () => {
 	}
 	const tablerow = document.createElement('tr')
 	const tabledata = document.createElement('td')
-	tabledata.class = "ans"
+	tabledata.id = "ans"
 	table.colSpan = 2
 	tabledata.innerText = `Total price is  ${sum}`
 	tablerow.appendChild(tabledata)
