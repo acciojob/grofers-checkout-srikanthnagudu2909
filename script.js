@@ -5,15 +5,15 @@ document.body.appendChild(getSumBtn);
 const getSum = () => {
 //Add your code here
 	let sum = 0
-	const table = document.getElementById('table')
+	const table = document.getElementById("table")
 	const prices = document.querySelectorAll('.price')
 	function  total(){
 	for(let price of prices){
 		sum += parseInt(price.innerText)
 		
 	}
-	const tablerow = document.createElement('tr')
-	const tabledata = document.createElement('td')
+	const tablerow = document.createElement("tr")
+	const tabledata = document.createElement("td")
 	tabledata.id = "ans"
 	table.colSpan = 2
 	tabledata.innerText = `Total price is  ${sum}`
